@@ -35,7 +35,7 @@ namespace _2.Controllers
         }
 
         [HttpPut]
-        public void HttpPut([FromBody] Student student)
+        public void Put([FromBody] Student student)
         {
             StudentRep.Students.Where(s=> s.Id != student.Id).Append(student);
         }
