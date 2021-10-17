@@ -40,11 +40,10 @@ namespace _2.Controllers
             StudentRep.Students.Where(s=> s.Id != student.Id).Append(student);
         }
 
-        [HttpDelete]
-        public void HttpDelete([FromBody] Student student)
+        [HttpDelete("{id}")]
+        public void HttpDelete(int id)
         {
-            Console.Write(student.Id);
-            StudentRep.Students.Remove(student);
+            StudentRep.Students.ElementAtOrDefault(id);
         }
     }
 }
