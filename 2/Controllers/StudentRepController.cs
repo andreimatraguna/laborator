@@ -41,9 +41,9 @@ namespace _2.Controllers
         }
 
         [HttpDelete("{id}")]
-        public void HttpDelete(int id)
+        public void Delete(int id)
         {
-            StudentRep.Students.ElementAtOrDefault(id);
+            StudentRep.Students.RemoveAt(id);
         }
     }
 }
