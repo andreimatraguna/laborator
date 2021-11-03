@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="MicrosoftAzure.Storages" Version="11.2.3" />
   </ItemGroup>
 
 </Project>
